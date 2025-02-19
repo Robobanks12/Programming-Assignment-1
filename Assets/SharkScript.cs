@@ -4,31 +4,13 @@ using UnityEngine;
 
 public class SharkScript : MonoBehaviour
 {
-    // Shark eats fish upon interaction
+
     void Start()
     {
-        Vector2 direction = Vector2.zero;
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.Space))
         {
-            direction = Vector2.up;
+            Debug.Log("The shark jumps out and crashes through the glass sheet and lands on the ground, he eventually passes away due to a lack of movement");
         }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            direction = Vector2.down;
-        }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            direction = Vector2.left;
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            direction = Vector2.right;
-        }
-
-        float dt = Time.deltaTime;
-        float speed = 10.0f;
-        Vector3 change = direction * speed * dt;
-        transform.position = transform.position + change;
     }
 
     // Update is called once per frame

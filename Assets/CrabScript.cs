@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CrabScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+        // Crab jumps upon interaction
     void Start()
     {
         

@@ -2,9 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Animal : MonoBehaviour
+public abstract class Animal : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject Crab;
+    public GameObject Shark;
+    public GameObject Geckgo;
+    public GameObject Chimp;
+
     void Start()
     {
         

@@ -11,6 +11,7 @@ public class GeckoScript : MonoBehaviour
     void Start()
     {
         float randomNumber = Random.Range(0, 3);
+        Application.targetFrameRate = 5;
     }
 
 
@@ -52,4 +53,5 @@ public class GeckoScript : MonoBehaviour
         }
 
     }
-}
+}
+

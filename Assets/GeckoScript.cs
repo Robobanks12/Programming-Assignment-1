@@ -11,7 +11,6 @@ public class GeckoScript : MonoBehaviour
     void Start()
     {
         float randomNumber = Random.Range(0, 3);
-        Application.targetFrameRate = 5;
     }
 
 
@@ -26,30 +25,31 @@ public class GeckoScript : MonoBehaviour
 
             
             if (randomNumber == 0)
-            {
+                {
                 m_SpriteRenderer = GetComponent<SpriteRenderer>();
                 m_SpriteRenderer.color = Color.blue;
                 Debug.Log("Gecko Changes Color to blue");
-            }
+                }
             if (randomNumber == 1)
-            {
+                {
                 m_SpriteRenderer = GetComponent<SpriteRenderer>();
                 m_SpriteRenderer.color = Color.green;
                 Debug.Log("Gecko Changes Color to green");
-            }
+                }
             if (randomNumber == 2)
-            {
+                {
                 m_SpriteRenderer = GetComponent<SpriteRenderer>();
                 m_SpriteRenderer.color = Color.red;
                 Debug.Log("Gecko Changes Color to red");
-            }
+                }
 
             if (randomNumber == 3)
-            {
+                {
                 m_SpriteRenderer = GetComponent<SpriteRenderer>();
                 m_SpriteRenderer.color = Color.white;
                 Debug.Log("Gecko Changes Color to normal");
-            }
+                }
+            
         }
 
     }
